@@ -12,8 +12,16 @@ namespace _01_MoneyExampleTest
         public void TestMultiplication()
         {
             Dollar five = new Dollar(5);
-            five.Times(2);
-            Assert.Equal(10, five.amount);
+
+            {
+                var product = five.Times(2);
+                Assert.Equal(10, product.amount);
+            }
+
+            {
+                var product = five.Times(3);
+                Assert.Equal(15, product.amount);
+            }
         }
     }
 }
