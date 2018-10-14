@@ -14,4 +14,8 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\01_MoneyExample\01_MoneyExample.csproj" />
+  </ItemGroup>
+
 </Project>
