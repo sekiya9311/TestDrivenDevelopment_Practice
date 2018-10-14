@@ -17,5 +17,16 @@ namespace _01_MoneyExample
         {
             return new Dollar(this.amount * multiplier);
         }
+
+        public override bool Equals(object obj)
+        {
+            var other = (Dollar)obj;
+            return this.amount == other.amount;
+        }
+
+        public override int GetHashCode()
+        {
+            return this.amount.GetHashCode();
+        }
     }
 }
